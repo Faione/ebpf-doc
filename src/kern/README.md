@@ -1,5 +1,16 @@
 # kern program
 
+## libbpf
+
+开发 ebpf C 程序所需要的包，包括 helper 函数，相关宏定义等
+
+```shell
+# arch
+sudo pacman -S libbpf
+# ubuntu
+sudo apt-get install libbpf-dev
+```
+
 ## vmlinux.h
 
 [vmlinux](https://www.grant.pizza/blog/vmlinux-header/)
@@ -9,6 +20,3 @@
 ```shell
 bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
 ```
-
-[kern_ebpf_doc](https://www.kernel.org/doc/html/latest/bpf)
-[](https://prototype-kernel.readthedocs.io/en/latest/bpf/ebpf_maps.html)

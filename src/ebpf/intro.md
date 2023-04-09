@@ -1,6 +1,5 @@
 # what is ebpf
 
-
 - [what is ebpf](#what-is-ebpf)
   - [BPF 架构](#bpf-架构)
   - [BPF 指令集](#bpf-指令集)
@@ -13,14 +12,11 @@
   - [JIT](#jit)
   - [Lifetime](#lifetime)
 
-
-[ebpf_slide](https://github.com/gojue/ebpf-slide)
-
 BPF(Berkeley Packet Filter) 是Linux内核中一个高度灵活且高效的类虚拟机基础设施，允许以安全的方式在丰富的内核钩子中执行字节代码。BPF在内核的许多子系统中使用，特别是网络、追踪与安全子系统中
 
 eBPF(extended Berkeley Packet Filter) 是Linux的现行标准，传统BPF程序(cBPF)会被透明的翻译为eBPF并在内核中执行
 
-BPF起初是为了进行网络包过滤，目前其功能已有更多扩展，不局限于网络
+BPF起初是为了进行网络包过滤，目前其功能已有更多扩展，不局限于网络 [^1] 
 
 ## BPF 架构
 
@@ -197,11 +193,11 @@ todo
 
 > prog也是BPF objects, 这使得在应用之间分享ebpf程序成为可能
 
-在用户空间中可以通过文件描述符(FDs)来访问BPF objects(progs, maps, and debug info)，每一个对象都有一个引用计数，当引用计数归零时，将会触发RCU后的内存释放[^1]
+在用户空间中可以通过文件描述符(FDs)来访问BPF objects(progs, maps, and debug info)，每一个对象都有一个引用计数，当引用计数归零时，将会触发RCU后的内存释放[^2]
 
 对于BPF prog中的BPF map而言，由于BPF prog的存在，BPF map至少会有一个引用计数，因此直到BPF prog也被释放，BPF map才会被释放
 
 当BPF prog被attach到一些hook上时，BPF prog的引用计数就会增加，比如从用户态加载BPF prog并attach时，即便没有对应的文件被创建，但是引用计数并不为0,因此还能够继续存在
 
-
-[^1] [bpf_lifetimes](https://facebookmicrosites.github.io/bpf/blog/2018/08/31/object-lifetime.html)
+[^1] [bpf_arch](https://docs.cilium.io/en/latest/bpf/architecture/)
+[^2] [bpf_lifetimes](https://facebookmicrosites.github.io/bpf/blog/2018/08/31/object-lifetime.html)
