@@ -14,7 +14,10 @@
 # Kern Program
 - [kern program](kern/README.md)
 - [try with bpftools](kern/try_with_bpftools.md)
-
+- [bpf](kern/bpf/README.md)
+  - [helpers](kern/bpf/bpf_helpers.md)
+  - [tracing](kern/bpf/bpf_tracing.md)
+  - [core read](kern/bpf/bpf_core_read.md)
 
 # User Program
 

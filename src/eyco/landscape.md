@@ -1,8 +1,14 @@
 # landscape
 
+[bpf_tutorial](https://github.com/eunomia-bpf/bpf-developer-tutorial)郑昱笙老姐的教程，主要讲的是libbpf的使用方法，非常不错
+
+[bolipi](https://www.bolipi.com/ebpf/index)国内活跃的ebpf社区，提供一些入门教程，关键是还有一些企业项目的路标，适合有一定学习基础后上手项目
+
 [ebpf_slide](https://github.com/gojue/ebpf-slide)中包含有大量ebpf相关的slide, 且有分类，初学者可以参考`eBPF基础知识`板块进行学习
 
 [kern_ebpf_doc](https://www.kernel.org/doc/html/latest/bpf)是内核中的ebpf介绍, 包括help functions，prog type, map type 等介绍，可以协助进行ebpf的开发
+
+[ebpf_top](https://www.ebpf.top/)中收集了大量ebpf相关的博文翻译，其中大部分博文都来自于[facebook](https://facebookmicrosites.github.io/bpf/)
 
 ## bcc
 

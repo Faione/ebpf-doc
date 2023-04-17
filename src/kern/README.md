@@ -20,3 +20,7 @@ sudo apt-get install libbpf-dev
 ```shell
 bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
 ```
+
+## kern data type
+
+`u64` 和 `__u64` 都表示相同类型的数据，后者中增加的 `__` 表明是内核专用数据类型
