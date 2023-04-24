@@ -28,7 +28,7 @@
 
 开发ebpf kern程序要求对kernel有一定了解， 而开发 ebpf user 程序需要了解 libbpf 中的接口，主要包括如何加载ebpf代码，如何获取ebpf kern代码中的maps，如何从event map中读取数据进行处理等
 
-libbpf-rs提供了rust风格的libbpf接口，从而能够使用rust进行ebpf user程序的开发，开发流程与c一致。[libpf-example](https://github.com/libbpf/libbpf-bootstrap/tree/master/examples)中提供了rust/c的示例程序，[libbpf-rs-example](https://github.com/libbpf/libbpf-rs/tree/master/examples)中还有额外的rust示例程序
+libbpf-rs提供了rust风格的libbpf接口，从而能够使用rust进行ebpf user程序的开发，开发流程与c一致。[libpf-example](https://github.com/libbpf/libbpf-bootstrap/tree/master/examples)中提供了rust/c的示例程序，[libbpf-rs-example](https://github.com/libbpf/libbpf-rs/tree/master/examples)中还有额外的rust示例程序, 我也写了一些libbpf-rs的入门程[ebabypf](https://github.com/Faione/ebabypf)
 
 ## aya
 
