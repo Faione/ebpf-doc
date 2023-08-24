@@ -15,9 +15,12 @@
 - [kern program](kern/README.md)
 - [try with bpftools](kern/try_with_bpftools.md)
 - [bpf](kern/bpf/README.md)
-  - [helpers](kern/bpf/bpf_helpers.md)
-  - [tracing](kern/bpf/bpf_tracing.md)
-  - [core read](kern/bpf/bpf_core_read.md)
+  - [prog type](kern/bpf/prog_type.md)
+  - [map](kern/bpf/map.md)
+  - [syscall](kern/bpf/syscall.md)
+  - [helper](kern/bpf/helper.md)
+  - [kfuncs](kern/bpf/kfunc.md)
+  - [core read](kern/bpf/core_read.md)
 
 # User Program
 
@@ -29,6 +32,7 @@
     - [c](user/libbpf/c.md)
     - [rust](user/libbpf/rust.md)
   - [aya](user/aya/README.md)
+  - [cilium](user/cilium/README.md)
 
 # Project
 

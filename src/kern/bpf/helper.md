@@ -1,5 +1,16 @@
 # helpers
 
+helper函数[^1]形式类似于系统调用，是内核暴漏给bpf程序的特殊函数，考虑到bpf程序运行在内核态，因而不会有上下文切换的开销，实际与kernel module中调用kernel函数类似，但由于调用局限在给定的范围内，因而能够在提供灵活性的同时，保证ebpf程序执行的安全性
+
+[^1]: [bpf_helpers](https://elixir.bootlin.com/linux/latest/source/kernel/bpf/helpers.c)
+[^2]: [bpf_helper_doc](https://man7.org/linux/man-pages/man7/bpf-helpers.7.html)
+
+
+## bpf_get_current_cgroup_id
+
+获取当前task所属cgroup的cgroup_id
+- cgroup_id 出现在 cgroup v2 中，实际为cgroup对应 kfs node 的id
+
 ## bpf_get_current_pid_tgid
 
 获取当前cpu上执行任务的 pid, tgid
