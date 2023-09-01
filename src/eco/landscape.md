@@ -10,6 +10,8 @@
 
 [ebpf_top](https://www.ebpf.top/)中收集了大量ebpf相关的博文翻译，其中大部分博文都来自于[facebook](https://facebookmicrosites.github.io/bpf/)
 
+[mozilazg_blog](https://mozillazg.com/)大佬的博客中，有许多关于ebpf及gobpf的相关文章
+
 ## bcc
 
 [bcc](https://github.com/iovisor/bcc)是当前最流行的ebpf开发框架，全称是bpf compiler collection, 提供高度封装的api来辅助ebpf程序的开发，并在运行时编译，由于封装了大量 ebpf程序开发，编译，加载的内容，极大降低了ebpf程序的开发流程，但是相应的灵活性也有所降低，同时由于需要在运行时进行编译，不可避免的目标机器上的编译器环境支持

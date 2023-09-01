@@ -4,9 +4,9 @@
 
 - [what is ebpf](ebpf/intro.md)
 
-# Ebpf Eycosystem
+# Ebpf Ecosystem
 
-- [landscape](eyco/landscape.md)
+- [landscape](eco/landscape.md)
 
 # Write ebpf
 
